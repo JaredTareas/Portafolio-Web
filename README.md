@@ -12,144 +12,42 @@
 
 ## Descripción breve
 
-Este proyecto consiste en un portafolio web personal creado con HTML, CSS, JavaScript y Bootstrap.
+Este proyecto consiste en un portafolio web personal desarrollado con HTML, CSS, JavaScript y Bootstrap.
 
-El objetivo del portafolio es mostrar información personal, habilidades, proyectos realizados o planeados, y datos de contacto. También se publicó en GitHub Pages como práctica de uso de GitHub 
----
-
-## Framework CSS utilizado
-
-Para este proyecto se utilizó **Bootstrap 5** como framework CSS.
-
-Bootstrap permite crear páginas responsivas utilizando clases ya definidas, como contenedores, filas, columnas, botones, tarjetas y menús de navegación.
+El objetivo del portafolio es mostrar información personal, habilidades, proyectos realizados o planeados, y datos de contacto. Además, el proyecto fue subido a GitHub y publicado mediante GitHub Pages.
 
 ---
 
-## Plantilla utilizada
+## Descripción del proyecto
 
-La plantilla utilizada fue una estructura personalizada basada en el **Starter Template / CDN Starter de Bootstrap**.
+Para este portafolio se utilizó el framework CSS **Bootstrap**, ya que permite crear sitios web responsivos usando clases predefinidas para organizar el contenido, botones, columnas, iconos y secciones.
 
-No se descargó una plantilla completa con diseño avanzado, sino que se usó Bootstrap como base para crear una plantilla sencilla de portafolio personal.
+La plantilla utilizada fue **MyResume** de BootstrapMade.
 
-Link de referencia de la plantilla y ejemplos de Bootstrap:
+**Link de descarga de la plantilla:**  
+https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 
-https://getbootstrap.com/docs/5.3/examples/
+La plantilla original incluía varias carpetas como `assets`, `vendor` y otros archivos. Sin embargo, para cumplir con la estructura solicitada en la actividad, se adaptó el proyecto para dejar únicamente los archivos y carpetas principales:
 
-Link del Starter Template:
-
-https://getbootstrap.com/docs/5.3/examples/starter-template/
-
----
-
-## Secciones del portafolio
-
-El portafolio está compuesto por las siguientes secciones:
-
-### 1. Menú de navegación
-
-Contiene el nombre del portafolio y enlaces internos para moverse a las secciones principales de la página:
-
-- Sobre mí
-- Habilidades
-- Proyectos
-
-Este menú fue creado usando clases de Bootstrap como `navbar`, `container`, `nav-link` y `bg-dark`.
-
----
-
-### 2. Inicio
-
-En esta sección se muestra la foto de perfil, el nombre completo y la carrera del estudiante.
-
-También se agregó un botón llamado **Mostrar saludo**, el cual usa JavaScript para mostrar un mensaje en la página.
-
----
-
-### 3. Sobre mí
-
-Esta sección contiene una breve descripción personal del estudiante.
-
-Se menciona que actualmente se está aprendiendo desarrollo web con HTML, CSS, JavaScript y frameworks de diseño. También se mencionan conocimientos previos en Java y administración de bases de datos.
-
----
-
-### 4. Habilidades
-
-En esta sección se muestran algunas habilidades relacionadas con el desarrollo y la programación.
-
-Las habilidades agregadas son:
-
-- HTML
-- CSS
-- JavaScript
-- Java
-- SQL
-
-Estas habilidades se muestran usando tarjetas con la clase `card` de Bootstrap.
-
----
-
-### 5. Proyectos
-
-En esta sección se muestran algunos proyectos realizados o planeados.
-
-Los proyectos incluidos son:
-
-- Portafolio personal
-- Punto de venta Tumotorun
-- Base de datos grande simulando la CFE
-
-Cada proyecto se presenta dentro de una tarjeta de Bootstrap con una breve descripción.
-
----
-
-### 6. Contacto
-
-En esta sección se muestra el correo institucional para contacto.
-
----
-
-### 7. Footer
-
-Al final de la página se agregó un pie de página con el nombre del estudiante y el año.
-
----
-
-## Proceso de creación
-
-### Paso 1: Creación de la estructura del proyecto
-
-Primero se creó una carpeta llamada `portafolio`, donde se organizaron los archivos principales del proyecto.
-
-La estructura utilizada fue la siguiente:
 
 portafolio/
- index.html
- css/
- portafolio.css
-js/
- portafolio.js
-img/
-   img1.jpg
+│
+├── index.html
+├── README.md
+├── css/
+│   └── portafolio.css
+├── js/
+│   └── portafolio.js
+└── img/
+    ├── foto-perfil.jpg
+    └── hero-bg.jpg
 
-### Paso 2: Para iniciar el proyecto se eligió una plantilla sencilla basada en Bootstrap.  
-No se utilizó una plantilla descargada completa, sino una estructura tipo portafolio personal creada con ayuda de los componentes de Bootstrap.
+### Paso 1: Adaptación del archivo HTML
 
-Se eligió Bootstrap porque permite crear páginas responsivas de forma más rápida mediante clases ya definidas, como menús, botones, tarjetas, contenedores, filas y columnas.
+Se creó y modificó el archivo index.html.
 
-La plantilla base se tomó como referencia de los ejemplos oficiales de Bootstrap:
+En este archivo se colocaron las secciones principales del portafolio:
 
-https://getbootstrap.com/docs/5.3/examples/
-
-### Paso 3: Creación del archivo index.html
-
-Se creó el archivo index.html, que es la página principal del portafolio.
-
-En este archivo se agregó la estructura básica de HTML y se conectó Bootstrap por medio de CDN. También se conectaron los archivos personalizados portafolio.css y portafolio.js.
-
-El archivo HTML contiene las secciones principales del portafolio:
-
-Menú de navegación
 Inicio
 Sobre mí
 Habilidades
@@ -157,51 +55,80 @@ Proyectos
 Contacto
 Footer
 
+También se agregaron los enlaces CDN para cargar Bootstrap, Bootstrap Icons y las letras.
 
-### Paso 4: Modificación del menú de navegación
+### Paso 2: Adaptación de la plantilla MyResume
 
-Se agregó un menú superior usando la clase navbar de Bootstrap.
+La plantilla MyResume original tenía un diseño con menú lateral, imagen de fondo, secciones tipo currículum y barras de habilidades.
 
-El menú contiene enlaces internos hacia las secciones principales del portafolio:
+Se tomaron esos elementos visuales como base y se adaptaron al proyecto.
 
-Sobre mí
-Habilidades
-Proyectos
+Las principales modificaciones fueron:
 
-Esto se hizo para que el usuario pueda navegar de forma más fácil dentro de la página.
+1.-Se cambió el contenido original por información personal.
+2.- Se agregó una foto de perfil real.
+3.- Se cambió la imagen de fondo por hero-bg.jpg.
+4.- Se adaptaron las secciones a la actividad.
+5.- Se eliminaron archivos que no eran necesarios.
+6.- Se reorganizó el proyecto en las carpetas css, js e img.
 
-### Paso 5: Modificación de la sección de inicio
+### Paso 3: Modificación del menú
 
-En la sección de inicio se agregó una foto de perfil real, el nombre completo y la carrera del estudiante.
+El menú de navegación se adaptó para que fuera lateral, parecido al de la plantilla original.
 
-### Paso 6: Modificación de la sección “Sobre mí”
+Se agregaron enlaces internos para que el usuario pueda navegar dentro de la misma página.
 
-En la sección “Sobre mí” se agregó una descripción personal.
-
-
-### Paso 7: Modificación de la sección de habilidades
-
-Se creó una sección de habilidades usando tarjetas de Bootstrap.
-
-### Paso 8: Modificación de la sección de proyectos
-
-Se agregó una sección de proyectos usando tarjetas de Bootstrap.
-
-### Paso 9: Modificación de la sección de contacto y footer
-
-Se agregó una sección sencilla de contacto con el correo institucional, igualmente se agrego un footer usando un bgcolor de bootstrap
+También se utilizaron iconos de Bootstrap Icons para representar cada sección.
 
 
-##EVIDENCIA
+### Paso 4: Modificación de la sección de inicio
 
-<img width="1919" height="1071" alt="image" src="https://github.com/user-attachments/assets/c1328720-2891-447b-9426-6b3f944d5e77" />
+En la sección de inicio se agregó:
 
-<img width="1919" height="1008" alt="image" src="https://github.com/user-attachments/assets/136e2d9a-b949-47c4-ba66-759891f79257" />
+1.- Foto de perfil
+2.-Nombre completo
+3.- Texto cambiante
+4.- Enlace a contacto
 
-<img width="1919" height="437" alt="image" src="https://github.com/user-attachments/assets/7e228938-3b76-4dd1-b699-929d9c7d92df" />
+El texto cambiante fue programado en JavaScript, de igual forma se uso lo de la plantilla solo cabie el tiempo.
+
+
+### Paso 5: Modificación de la sección “Sobre mí”
+
+En esta sección se reemplazó el texto original de la plantilla por una descripción personal.
+
+
+#### Paso 6: Modificación de la sección de habilidades
+
+La sección de habilidades fue adaptada usando barras de progreso.
+
+
+### Paso 7: Modificación de la sección de proyectos
+
+La sección de proyectos se adaptó usando tarjetas.
+
+Cada tarjeta contiene un icono, un título y una descripción breve del proyecto.
+
+
+## Paso 8: Modificación de la sección de contacto
+
+En la sección de contacto se agregó el correo institucional y el usuario de GitHub.
+
+
+### Paso 9: Personalización con CSS
+
+El archivo css/portafolio.css contiene los estilos personalizados de la plantilla.
 
 
 
+##EVIDECIA 
+<img width="1919" height="1072" alt="image" src="https://github.com/user-attachments/assets/3ecf30dd-3b77-4f76-bfac-0bf6fb586071" />
 
+<img width="1919" height="1012" alt="image" src="https://github.com/user-attachments/assets/6c14b2f4-5490-47bf-afc6-a93a569b4995" />
 
+<img width="1919" height="947" alt="image" src="https://github.com/user-attachments/assets/e3b48d7f-8e44-4370-b92f-64aa2d255c56" />
+
+<img width="1912" height="959" alt="image" src="https://github.com/user-attachments/assets/2a4e4131-2642-4964-9cc9-388764c86da4" />
+
+<img width="1919" height="1078" alt="image" src="https://github.com/user-attachments/assets/80c64b1c-0478-467b-adea-68fe810ef376" />
 
