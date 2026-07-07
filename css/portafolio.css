@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ded8ca;
+}
+
+.inicio {
+    background-color: #212529;
+    color: white;
+    padding: 60px 20px;
+}
+
+.foto-perfil {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgb(227, 100, 3);
+    margin-bottom: 20px;
+}
+
+.seccion {
+    padding: 40px 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #212529;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(123, 235, 18, 0.789);
+}
+
+footer{
+    background-color: rgb(108, 250, 0);
+    color: blue;
+}
