@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Jared</title>
+    <title>Portafolio - Luis Jared García García</title>
 
-   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     
     <link rel="stylesheet" href="./css/portafolio.css">
@@ -14,124 +19,306 @@
 
 <body>
 
-  
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mi Portafolio</a>
+    
+    <button class="btn-menu" id="btnMenu">
+        <i class="bi bi-list"></i>
+    </button>
 
-            <div>
-                <a class="nav-link d-inline text-white" href="#sobre-mi">Sobre mí</a>
-                <a class="nav-link d-inline text-white ms-3" href="#habilidades">Habilidades</a>
-                <a class="nav-link d-inline text-white ms-3" href="#proyectos">Proyectos</a>
-            </div>
-        </div>
-    </nav>
+    
+    <header id="header" class="header">
+        <nav class="navmenu">
+            <ul>
+                <li>
+                    <a href="#inicio" class="active">
+                        <i class="bi bi-house"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
 
-  
-    <header class="inicio text-center">
-        <div class="container">
-            <img src="./img/img1.jpg" alt="Foto de perfil" class="foto-perfil">
+                <li>
+                    <a href="#sobre-mi">
+                        <i class="bi bi-person"></i>
+                        <span>Sobre mí</span>
+                    </a>
+                </li>
 
-            <h1>Luis Jared García García</h1>
-            <p>Estudiante de Ingenieria en sistemas computacionales</p>
+                <li>
+                    <a href="#habilidades">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Habilidades</span>
+                    </a>
+                </li>
 
-            <button id="btnSaludo" class="btn btn-primary">Mostrar saludo</button>
-            <p id="mensaje" class="mt-3"></p>
-        </div>
+                <li>
+                    <a href="#proyectos">
+                        <i class="bi bi-folder"></i>
+                        <span>Proyectos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contacto">
+                        <i class="bi bi-envelope"></i>
+                        <span>Contacto</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    
-    <section id="sobre-mi" class="container seccion">
-        <h2>Sobre mí</h2>
-        <p>
-           Soy estudiante del Instituto Tecnológico de Oaxaca. Actualmente estoy aprendiendo a desarrollar aplicaciones web utilizando HTML, CSS, JavaScript y frameworks de diseño. 
-           Además, cuento con conocimientos previos en el lenguaje Java y 
-           en administración de bases de datos.
-        </p>
-    </section>
+    <main>
 
-   
-    <section id="habilidades" class="container seccion">
-        <h2>Mis Habilidades</h2>
+       
+        <section id="inicio" class="inicio">
+            <div class="contenido-inicio">
+                <img src="./img/foto-perfil.jpg" alt="Foto de perfil de Luis Jared" class="foto-perfil">
 
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card p-3 text-center">HTML</div>
-            </div>
+                <h1>Luis Jared García García</h1>
 
-            <div class="col-md-3">
-                <div class="card p-3 text-center">CSS</div>
-            </div>
+                <p>
+                    Soy
+                    <span id="textoCambiante">Estudiante de Ingeniería en Sistemas Computacionales</span>
+                </p>
 
-            <div class="col-md-3">
-                <div class="card p-3 text-center">JavaScript</div>
-            </div>
+                <div class="redes">
+                    <a href="https://github.com/JaredTareas" target="_blank">
+                        <i class="bi bi-github"></i>
+                    </a>
 
-            <div class="col-md-3">
-                <div class="card p-3 text-center">Java</div>
-            </div>
-
-        <div class="col-md-3">
-                <div class="card p-3 text-center">SQL</div>
-            </div>
-               
-
-        </div>
-    </section>
-
-    
-    <section id="proyectos" class="container seccion">
-        <h2>Mis Proyectos</h2>
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Portafolio personal</h5>
-                    <p>Página web creada con HTML, CSS, JS y Bootstrap.</p>
+                    <a href="#contacto">
+                        <i class="bi bi-envelope"></i>
+                    </a>
                 </div>
             </div>
+        </section>
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>PUNTO DE VENTA Tumotorun</h5>
-                    <p>Proyecto planeado para administar correctamente las ventas
-                        de una tienda u empresa, el proyecto fue realizado para una agencia 
-                        de motos, pero puede adaptarse a cualquier tipo de venta 
+       
+        <section id="sobre-mi" class="seccion">
+            <div class="container">
+
+                <div class="titulo-seccion">
+                    <h2>Sobre mí</h2>
+                    <p>
+                        Información personal y académica.
                     </p>
                 </div>
-            </div>
 
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Base de datos Grande de 68gb (Simulando la CFE)</h5>
-                    <p>Proyecto donde se administro correctamente una base de datos 
-                        grande, utilizando las correctas tecnicas como 
-                        replicacion,espejeo, creacion de usuarios, migraciones,recuperaciones
-                        y respaldos.</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-center">
+                        <img src="./img/foto-perfil.jpg" alt="Foto de Luis Jared" class="img-fluid foto-sobre-mi">
+                    </div>
+
+                    <div class="col-lg-8">
+                        <h3>Estudiante y desarrollador web en formación</h3>
+
+                        <p>
+                            Soy estudiante del Instituto Tecnológico de Oaxaca. Actualmente estoy aprendiendo a
+                            desarrollar aplicaciones web utilizando HTML, CSS, JavaScript y frameworks de diseño.
+                        </p>
+
+                        <p>
+                            Además, cuento con conocimientos previos en el lenguaje Java y en administración de bases de
+                            datos. Este portafolio fue creado como práctica para mostrar mi perfil académico,
+                            habilidades, proyectos y datos de contacto.
+                        </p>
+
+                        <div class="row datos">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Nombre:</strong> Luis Jared García García</li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Institución:</strong> Instituto Tecnológico de Oaxaca</li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Carrera:</strong> Ing. Sistemas Computacionales</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> Oaxaca, México</li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> 22161064@itoaxaca.edu.mx</li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> JaredTareas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        
+        <section id="habilidades" class="seccion fondo-claro">
+            <div class="container">
+
+                <div class="titulo-seccion">
+                    <h2>Habilidades</h2>
+                    <p>
+                        Tecnologías que conozco o que estoy aprendiendo.
+                    </p>
+                </div>
+
+                <div class="row habilidades">
+
+                    <div class="col-lg-6">
+                        <div class="habilidad">
+                            <span>HTML</span>
+                            <span>100%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <span>CSS</span>
+                            <span>100%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="habilidad">
+                            <span>Bootstrap</span>
+                            <span>60%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 70%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <span>Java</span>
+                            <span>95%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 65%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="habilidad">
+                            <span>SQL</span>
+                            <span>95%</span>
+                            <div class="barra">
+                                <div class="progreso" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
+        </section>
 
+        
+        <section id="proyectos" class="seccion">
+            <div class="container">
 
-          
+                <div class="titulo-seccion">
+                    <h2>Proyectos</h2>
+                    <p>
+                        Algunos proyectos realizados o planeados.
+                    </p>
+                </div>
 
+                <div class="row">
 
-    </section>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-proyecto">
+                            <i class="bi bi-window"></i>
+                            <h4>Portafolio personal</h4>
+                            <p>
+                                Página web creada con HTML, CSS, JavaScript y Bootstrap, basada en la plantilla
+                                MyResume de BootstrapMade.
+                            </p>
+                        </div>
+                    </div>
 
-    
-    <section class="container seccion text-center">
-        <h2>Contacto</h2>
-        <p>Correo: 22161064@itoaxaca.edu.mx</p>
-    </section>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-proyecto">
+                            <i class="bi bi-shop"></i>
+                            <h4>Punto de venta Tumotorun</h4>
+                            <p>
+                                Proyecto planeado para administrar correctamente ventas de una tienda o empresa.
+                                Fue pensado para una agencia de motos.
+                            </p>
+                        </div>
+                    </div>
 
-    <footer class="bg-dark text-white text-center p-3">
-        <p>© 2026 Luis Jared García García</p>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="tarjeta-proyecto">
+                            <i class="bi bi-database"></i>
+                            <h4>Base de datos simulando la CFE</h4>
+                            <p>
+                                Proyecto de administración de una base de datos grande, aplicando respaldos,
+                                recuperación, usuarios, migraciones y replicación.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="contacto" class="seccion fondo-claro">
+            <div class="container">
+
+                <div class="titulo-seccion">
+                    <h2>Contacto</h2>
+                    <p>
+                        Datos para comunicación.
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+
+                        <div class="contacto-caja">
+                            <div class="contacto-item">
+                                <i class="bi bi-envelope"></i>
+                                <div>
+                                    <h4>Correo</h4>
+                                    <p>22161064@itoaxaca.edu.mx</p>
+                                </div>
+                            </div>
+
+                            <div class="contacto-item">
+                                <i class="bi bi-github"></i>
+                                <div>
+                                    <h4>GitHub</h4>
+                                    <p>JaredTareas</p>
+                                </div>
+                            </div>
+
+                            <button id="btnSaludo" class="btn btn-primary mt-3">
+                                Mostrar saludo
+                            </button>
+
+                            <p id="mensaje" class="mensaje"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Luis Jared García García - Portafolio Web</p>
     </footer>
 
-  
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    
+    <!-- JS personalizado -->
     <script src="./js/portafolio.js"></script>
 </body>
+
 </html>
