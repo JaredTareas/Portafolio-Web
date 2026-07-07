@@ -29,18 +29,8 @@ https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 
 La plantilla original incluía varias carpetas como `assets`, `vendor` y otros archivos. Sin embargo, para cumplir con la estructura solicitada en la actividad, se adaptó el proyecto para dejar únicamente los archivos y carpetas principales:
 
+INDEX.HTML,CSS,JS,README
 
-portafolio/
-│
-├── index.html
-├── README.md
-├── css/
-│   └── portafolio.css
-├── js/
-│   └── portafolio.js
-└── img/
-    ├── foto-perfil.jpg
-    └── hero-bg.jpg
 
 ### Paso 1: Adaptación del archivo HTML
 
